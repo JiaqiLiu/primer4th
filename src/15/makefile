@@ -16,7 +16,7 @@ bsk2.exe: Basket.o bsk2.o
 	$(CC) $(CCFLAGS) bsk2.o Basket.o -o bsk2.exe
 
 V2_Basket_main.cc V2_Basket.cc: Basket2.h Basket_main.cc Basket.cc mk_basket2
-	mk_basket2
+	./mk_basket2
 
 V2_Basket_main.exe: V2_Basket_main.o V2_Basket.o
 	$(CC) $(CCFLAGS) V2_Basket_main.o V2_Basket.o \
